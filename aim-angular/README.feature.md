@@ -6,4 +6,4 @@
 - implement an angular service to display data from the file in the component.
 
 
-
+## aim-2: error handling.
