@@ -7,3 +7,8 @@
 
 
 ## aim-2: error handling.
+
+### aim-2-1: implement a global error handler.
+
+- add custom error interceptor to implement class ErrorHandler
+- implement service to manage errors
