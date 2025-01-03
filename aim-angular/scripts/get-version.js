@@ -9,7 +9,7 @@ try {
   const versionData = { version };
   fs.writeFileSync("./src/assets/version.json", JSON.stringify(versionData, null, 2));
 
-  console.log("Файл версии успешно создан:", version);
+  console.log("The version file has been created successfully:", version);
 } catch (error) {
-  console.error("Ошибка при получении версии:", error.message);
+  console.error("Error getting version:", error.message);
 }
