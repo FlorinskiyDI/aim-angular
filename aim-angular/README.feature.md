@@ -23,3 +23,5 @@
 ## aim-4: add controls - MaterialUI and PrimeNG.
 - add to project controls and styles for MaterialUI.
 - add to project controls and styles for PrimeNG.
+
+## aim-5: setup routing and main layouts.
