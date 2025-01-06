@@ -13,6 +13,10 @@ export const appConfig: ApplicationConfig = {
     {
       provide: ErrorHandler,
       useClass: GlobalErrorHandler
-    }
+    },
+    {
+      provide: 'LOGS',
+      useValue: true
+    },
   ]
 };
