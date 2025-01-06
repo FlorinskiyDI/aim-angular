@@ -4,12 +4,25 @@ import { RouterOutlet } from '@angular/router';
 import { AppVersionService } from './core-services/version.service';
 import { GlobalErrorService } from './core-error/global-error.service';
 import { environment } from '../environments/environment';
+// controls - material
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+// controls - primeng
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  imports: [
+    // @angular
+    RouterOutlet,
+    //  controls - material
+    MatIconModule,
+    MatButtonModule,
+    // controls - primeng
+    ButtonModule
+  ]  
 })
 
 export class AppComponent {
