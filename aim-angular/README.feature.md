@@ -8,7 +8,10 @@
 
 ## aim-2: error handling.
 
-### aim-2-1: implement a global error handler.
+    aim-2-1: implement a global error handler.
+        - add custom error interceptor to implement class ErrorHandler
+        - implement service to manage errors
 
-- add custom error interceptor to implement class ErrorHandler
-- implement service to manage errors
+    aim-2-2: implement logging of detected errors.
+        - implement logger that allow write logs to different places (console, local storage). In future we can extend logic to write logs it db.
+        - update code to log unhandled errors that occur.
