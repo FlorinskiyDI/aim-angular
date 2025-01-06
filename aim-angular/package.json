@@ -5,7 +5,11 @@
     "postinstall": "node ./scripts/get-version.js",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start-staging": "ng serve --configuration=staging",
+    "start-production": "ng serve --configuration=production",
+    "build": "ng build ",
+    "build-staging": "ng build --configuration=staging",
+    "build-production": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

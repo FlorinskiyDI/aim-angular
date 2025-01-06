@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 // core
 import { AppVersionService } from './core-services/version.service';
 import { GlobalErrorService } from './core-error/global-error.service';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { GlobalErrorService } from './core-error/global-error.service';
 
 export class AppComponent {
   appVersion = 'Loading...';
+  appEnviroment = 'Loading...';
 
   constructor(
     private versionService: AppVersionService,
@@ -23,6 +25,7 @@ export class AppComponent {
     this.versionService.getVersion().subscribe((data) => {
       this.appVersion = data.version;
     });
+    this.appEnviroment = environment.env;
 
     this.globalErrorService.error$.subscribe((error: any) => {
       alert(error);
