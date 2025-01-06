@@ -15,3 +15,7 @@
     aim-2-2: implement logging of detected errors.
         - implement logger that allow write logs to different places (console, local storage). In future we can extend logic to write logs it db.
         - update code to log unhandled errors that occur.
+
+## aim-3: setup enviroments
+- setup enviroments for stage and prod. 
+- using env in deploy. if site will be use subdomain, then script should has option for base-href, for example -> ng build --configuration=production --base-href=/your-subdomain/
