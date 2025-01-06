@@ -25,3 +25,7 @@
 - add to project controls and styles for PrimeNG.
 
 ## aim-5: setup routing and main layouts.
+
+    aim-5-1: implement layouts welcome and main.
+        - implement layout - main, add header, footer, block menu. 
+        - implement layout - welcome.
